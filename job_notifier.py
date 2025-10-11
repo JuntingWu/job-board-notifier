@@ -6,12 +6,12 @@ import time
 import smtplib
 from email.mime.text import MIMEText
 
-
-URL = "https://ecc-uoft-coop-csm.symplicity.com/students/app/jobs/search?perPage=20&page=1&sort=!postdate"
-CHECK_INTERVAL = 1800  # seconds (30 min)
+# CHECK_INTERVAL = 60  # seconds (30 min)
+CHECK_INTERVAL = 60  # seconds (1 min)
 SESSION_FILE = "auth.json"
 
 load_dotenv()
+URL = os.getenv("URL")
 SENDER = os.getenv("EMAIL_SENDER")
 RECEIVER = os.getenv("EMAIL_RECEIVER")
 PASSWORD = os.getenv("EMAIL_PASSWORD")
