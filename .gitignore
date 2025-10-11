@@ -1,0 +1,11 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore environment and auth files
+.env
+auth.json
+seen_jobs.json
+
+# Ignore system files
+.DS_Store
