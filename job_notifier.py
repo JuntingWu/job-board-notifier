@@ -6,8 +6,8 @@ import time
 import smtplib
 from email.mime.text import MIMEText
 
-# CHECK_INTERVAL = 60  # seconds (30 min)
-CHECK_INTERVAL = 60  # seconds (1 min)
+CHECK_INTERVAL = 1800  # seconds (30 min)
+# CHECK_INTERVAL = 1200  # seconds (0 min)
 SESSION_FILE = "auth.json"
 
 load_dotenv()
